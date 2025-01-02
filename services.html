@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudTech - Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="services.css">
+    <style>
+        /* Services Hero Section */
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: 120px;
+            padding-bottom: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Cloud Solutions Background */
+        .cloud-solutions {
+            background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+                        url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-1.2.1');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Infrastructure Section */
+        .infrastructure-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                        url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        /* Technology Stack Section */
+        .tech-stack-section {
+            background: linear-gradient(rgba(59, 130, 246, 0.9), rgba(30, 64, 175, 0.9)),
+                        url('https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-1.2.1');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        /* Service Cards with Glass Effect */
+        .service-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+            transition: all 0.3s;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ... rest of your existing styles ... */
+    </style>
+</head>
+<body>
+
+<!-- Awal Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px);">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <i class="fas fa-cloud fa-2x me-2 text-primary"></i>
+            <div>
+                <h4 class="m-0">CloudTech</h4>
+                <small class="text-primary">Cloud Solutions</small>
+            </div>
+        </a>
+
+        <!-- Toggle Button -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="index.html">
+                        <i class="fas fa-home me-1"></i> Home
+                        <span class="hover-underline"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="about.html">
+                        <i class="fas fa-info-circle me-1"></i> About
+                        <span class="hover-underline"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="services.html">
+                        <i class="fas fa-cogs me-1"></i> Services
+                        <span class="hover-underline"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="contact.html">
+                        <i class="fas fa-envelope me-1"></i> Contact
+                        <span class="hover-underline"></span>
+                    </a>
+                </li>
+                <li class="nav-item ms-lg-3">
+                    <a class="btn btn-primary rounded-pill px-4" href="contact.html">
+                        Get Started <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Akhir Navbar -->
+
+<!-- Awal Header -->
+<header class="page-header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold text-white mb-4">Cloud Solutions</h1>
+                <p class="lead text-white-50">Layanan cloud komprehensif untuk mengubah bisnis Anda</p>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Akhir Header -->
+
+<!-- Awal Services -->
+<section class="services-section py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Our Core Services</h2>
+        <div class="row g-4">
+            <!-- Cloud Infrastructure -->
+            <div class="col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="mb-3">Cloud Infrastructure</h3>
+                    <p class="text-muted">Bangun dan kembangkan infrastruktur Anda dengan solusi cloud kelas enterprise kami.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Virtual Machines</li>
+                        <li><i class="fas fa-check-circle"></i> Container Services</li>
+                        <li><i class="fas fa-check-circle"></i> Auto-scaling</li>
+                        <li><i class="fas fa-check-circle"></i> Load Balancing</li>
+                    </ul>
+                    <div class="mt-4">
+                        <span class="tech-stack"><i class="fab fa-aws"></i> AWS</span>
+                        <span class="tech-stack"><i class="fab fa-microsoft"></i> Azure</span>
+                        <span class="tech-stack"><i class="fab fa-google"></i> GCP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cloud Security -->
+            <div class="col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="mb-3">Cloud Security</h3>
+                    <p class="text-muted">Lindungi infrastruktur cloud Anda dengan solusi keamanan tingkat lanjut.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Firewall Management</li>
+                        <li><i class="fas fa-check-circle"></i> DDoS Protection</li>
+                        <li><i class="fas fa-check-circle"></i> Identity Management</li>
+                        <li><i class="fas fa-check-circle"></i> Encryption Services</li>
+                    </ul>
+                    <div class="mt-4">
+                        <span class="tech-stack"><i class="fas fa-lock"></i> SSL/TLS</span>
+                        <span class="tech-stack"><i class="fas fa-shield-alt"></i> WAF</span>
+                        <span class="tech-stack"><i class="fas fa-user-shield"></i> IAM</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cloud Storage -->
+            <div class="col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="mb-3">Cloud Storage</h3>
+                    <p class="text-muted">Solusi penyimpanan yang dapat disesuaikan untuk semua kebutuhan data Anda.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Object Storage</li>
+                        <li><i class="fas fa-check-circle"></i> Block Storage</li>
+                        <li><i class="fas fa-check-circle"></i> File Storage</li>
+                        <li><i class="fas fa-check-circle"></i> Backup Solutions</li>
+                    </ul>
+                    <div class="mt-4">
+                        <span class="tech-stack"><i class="fas fa-hdd"></i> SSD</span>
+                        <span class="tech-stack"><i class="fas fa-archive"></i> Archive</span>
+                        <span class="tech-stack"><i class="fas fa-sync"></i> Backup</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cloud DevOps -->
+            <div class="col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3 class="mb-3">Cloud DevOps</h3>
+                    <p class="text-muted">Tingkatkan efisiensi pengembangan dan operasional dengan solusi DevOps kami.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> CI/CD Pipeline</li>
+                        <li><i class="fas fa-check-circle"></i> Infrastructure as Code</li>
+                        <li><i class="fas fa-check-circle"></i> Monitoring & Logging</li>
+                        <li><i class="fas fa-check-circle"></i> Automation</li>
+                    </ul>
+                    <div class="mt-4">
+                        <span class="tech-stack"><i class="fab fa-jenkins"></i> Jenkins</span>
+                        <span class="tech-stack"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="tech-stack"><i class="fab fa-docker"></i> Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cloud Analytics -->
+            <div class="col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="mb-3">Cloud Analytics</h3>
+                    <p class="text-muted">Ubah data Anda menjadi wawasan yang dapat ditindaklanjuti.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Big Data Processing</li>
+                        <li><i class="fas fa-check-circle"></i> Real-time Analytics</li>
+                        <li><i class="fas fa-check-circle"></i> Machine Learning</li>
+                        <li><i class="fas fa-check-circle"></i> Data Visualization</li>
+                    </ul>
+                    <div class="mt-4">
+                        <span class="tech-stack"><i class="fas fa-brain"></i> ML</span>
+                        <span class="tech-stack"><i class="fas fa-chart-bar"></i> BI</span>
+                        <span class="tech-stack"><i class="fas fa-database"></i> Big Data</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cloud Consulting -->
+            <div class="col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="mb-3">Cloud Consulting</h3>
+                    <p class="text-muted">Panduan ahli untuk perjalanan cloud Anda.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Strategy Development</li>
+                        <li><i class="fas fa-check-circle"></i> Architecture Design</li>
+                        <li><i class="fas fa-check-circle"></i> Cost Optimization</li>
+                        <li><i class="fas fa-check-circle"></i> Best Practices</li>
+                    </ul>
+                    <div class="mt-4">
+                        <span class="tech-stack"><i class="fas fa-map"></i> Strategy</span>
+                        <span class="tech-stack"><i class="fas fa-coins"></i> ROI</span>
+                        <span class="tech-stack"><i class="fas fa-lightbulb"></i> Innovation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Implementation Process -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Our Implementation Process</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h4>Assessment</h4>
+                    <p class="text-muted">Evaluasi infrastruktur dan kebutuhan saat ini</p>
+                    <div class="process-connector"></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h4>Planning</h4>
+                    <p class="text-muted">Mengembangkan strategi dan jadwal migrasi</p>
+                    <div class="process-connector"></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h4>Implementation</h4>
+                    <p class="text-muted">Melaksanakan migrasi dan pengaturan</p>
+                    <div class="process-connector"></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h4>Support</h4>
+                    <p class="text-muted">Pemeliharaan dan optimalisasi berkelanjutan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">Ready to Transform Your Business?</h2>
+        <p class="lead text-muted mb-4">Let's discuss how our cloud solutions can help you achieve your goals</p>
+        <a href="contact.html" class="btn btn-primary btn-lg px-5">
+            Get Started <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Footer (sama seperti sebelumnya) -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
